@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolig Hund från TikTok</title>
+
+  <!-- 
+    Built-in CSS is used in the <head> via <style>
+    since the assignment does not require a complex design or a separate stylesheet I kept it very simple.
+  -->
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+    }
+
+    h1 {
+      color: #000000;
+    }
+
+    .tiktok-embed {
+      margin-top: 1em;
+    }   
+  </style>
+</head>
+
+<body>
+  <h1>Uppgift 16B - Rolig TikTok-video</h1>
+
+  <!-- 
+    I used <br> instead of multiple <p> tags because this is one single descriptive block.
+    Line breaks improve readability and accessibility without breaking it into separate paragraphs.
+  -->
+    <p>
+        Videon nedan visar en rolig hund av rasen Podenco, som heter <strong>Nala</strong>.<br>
+        Ägaren Charlie frågar om hon vill gå ut på kiss- och bajsrunda, som han uttrycker som "<i>walkies and wee-wee's</i>".<br>
+        Nala reagerar genom att slå runt med benen/tassarna och gör hennes berömda "<i>mouth snappies</i>", där hon öppnar munnen och snabbt stänger den.<br>
+        Hon ser <strong>extremt</strong> rolig ut när hon gör massa grimaser med ansiktet och hela kroppsspråket! 
+    </p>
+
+  <!-- 
+    TikTok embedding works differently than YouTube.
+    The standardized embed method for TikTok uses <blockquote> with data attributes and a separate script.
+    
+    Note: The embed code includes a <section> element without a heading, 
+    which triggered a warning when I validated the code using W3C's validator.
+    Since this is part of TikTok's official embed structure,
+    I chose to keep it as it is in order to follow their standard method,
+    which ensures compatibility and proper functionality.
+  -->
+
+  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lifelikecharlie/video/7319573146309299488" data-video-id="7319573146309299488" style="max-width: 605px;min-width: 325px;">
+    <section>
+      <a target="_blank" title="@lifelikecharlie" href="https://www.tiktok.com/@lifelikecharlie">@lifelikecharlie</a>
+      <p>🤍🐾</p>
+      <a target="_blank" title="♬ original sound - Charlie" href="https://www.tiktok.com/music/original-sound-7319573181821926145">♬ original sound - Charlie</a>
+    </section>
+  </blockquote>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+
+  <!--
+    Added a horizontal line to visibly mark the end of the web page
+  -->
+  <hr>
+
+</body>
+</html>
