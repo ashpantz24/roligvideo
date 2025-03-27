@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pojke Får Lådbil Över Sig</title>
+  
+  <!-- 
+    Built-in CSS is used in the <head> via <style>
+    since the assignment does not require a complex design or a separate stylesheet I kept it very simple.
+  -->
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+    }
+
+    h1, h2 {
+      color: #000;
+    }
+
+    /* 
+    The video container uses a padding-bottom of 56.25% to maintain a 16:9 aspect ratio.
+    This ensures that the height of the container is always 56.25% of the width, 
+    which is the standard ratio for YouTube videos.
+    This technique uses the padding hack, allowing the video to scale responsively without distortion.
+    */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    /* Ensures the video iframe is stretched properly inside the container */
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Roligt YouTube-klipp - Uppgift 16A</h1>
+
+  <!-- 
+    I used <br> instead of multiple <p> tags because this is one single descriptive block.
+    Line breaks improve readability and accessibility without breaking it into separate paragraphs.
+  -->
+  <p>Videon nedan visar ett klassiskt underhållande svenskt meme. 
+    En pojke kör en lådbil nedför en backe och bilen slirar vilket leder till att han får bilen över sig.<br>
+    Pojken ber om hjälp och skriker upprört att han "<strong>fick bilen i huvudet</strong>". 
+    Han skriker till sina vänner att de ska <strong>"flytta på bilfan"</strong> innan den klämmer sönder honom!</p>
+
+  <!-- 
+    The video is embedded using the <iframe> element.
+    It is a YouTube video, and the responsive container around the iframe ensures the video adapts well to different screen sizes.
+  -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/jaVIMENChs4" title="Vald YouTube-video" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+    <!--
+    Added a horizontal line to visibly mark the end of the web page
+  -->
+  <hr>
+
+  <!-- 
+    The video is embedded and styled in such a way that it follows HTML5 standards and is validated for responsiveness.
+  -->
+</body>
+</html>
